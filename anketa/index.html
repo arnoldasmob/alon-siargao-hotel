@@ -1,0 +1,445 @@
+<!DOCTYPE html><html lang="lt"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0E5E6E">
+<title>ALON Siargao · anketa apie žemę</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;color:#22303a;background:#F4F8F9;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:104px}
+.w{max-width:780px;margin:0 auto;padding:0 18px}
+header{background:#0E5E6E;color:#fff;padding:30px 0 34px}
+header svg{height:64px;width:auto;filter:brightness(0) invert(1)}
+header h1{font-size:clamp(24px,4.6vw,34px);font-weight:200;margin:20px 0 10px;letter-spacing:-.5px;line-height:1.16}
+header p{margin:0;opacity:.88;font-size:15.5px;max-width:52ch}
+.kas{background:#fff;border-radius:16px;padding:22px;margin:-20px auto 26px;box-shadow:0 2px 14px rgba(14,94,110,.09);position:relative;z-index:2}
+.kas label{display:block;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#6b7c87;margin-bottom:6px}
+.kas input{width:100%;border:1px solid #dce4e8;border-radius:10px;padding:12px 14px;font-size:16px;font-family:inherit;color:#22303a}
+.kas input:focus{outline:2px solid #14808F;outline-offset:1px;border-color:transparent}
+.info{background:#fff7ea;border:1px solid #e7c79a;border-radius:14px;padding:18px 20px;font-size:14.5px;margin-bottom:28px}
+.info b{color:#0E5E6E}
+h2{font-size:22px;font-weight:300;color:#0E5E6E;margin:34px 0 4px;letter-spacing:-.3px}
+.kam{font-size:12.5px;letter-spacing:.4px;color:#6b7c87;margin:0 0 6px}
+.tikslas{background:#fff;border-left:3px solid #14808F;border-radius:0 12px 12px 0;padding:14px 18px;font-size:14.5px;color:#4a5a64;margin:0 0 16px}
+.q{background:#fff;border-radius:16px;padding:20px;margin-bottom:14px;border:1px solid transparent;transition:border-color .15s}
+.q.ok{border-color:#bcdfd6;background:#fbfefd}
+.qh{display:flex;gap:12px;align-items:flex-start}
+.nr{flex:0 0 auto;background:#e7f1f3;color:#0E5E6E;border-radius:8px;font-size:13px;font-weight:600;padding:5px 9px;letter-spacing:.4px}
+.qt{font-size:16.5px;line-height:1.5;margin:2px 0 0}
+.qt b{font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;width:0;height:0}
+.chips span{display:inline-block;border:1px solid #dce4e8;border-radius:22px;padding:8px 15px;font-size:14.5px;color:#4a5a64;background:#fff;user-select:none}
+.chips input:focus-visible+span{outline:2px solid #14808F;outline-offset:2px}
+.chips input:checked+span{background:#0E5E6E;border-color:#0E5E6E;color:#fff}
+.chips label.ne input:checked+span{background:#9a3b2f;border-color:#9a3b2f}
+.chips label.nz input:checked+span{background:#8C8980;border-color:#8C8980}
+textarea{width:100%;margin-top:12px;border:1px solid #dce4e8;border-radius:10px;padding:12px 14px;font:15.5px/1.6 inherit;color:#22303a;resize:vertical;min-height:52px;font-family:inherit}
+textarea:focus{outline:2px solid #14808F;outline-offset:1px;border-color:transparent}
+.kodel{margin-top:12px;font-size:14px}
+.kodel summary{cursor:pointer;color:#14808F;list-style:none}
+.kodel summary::-webkit-details-marker{display:none}
+.kodel summary::before{content:"＋ ";font-size:13px}
+.kodel[open] summary::before{content:"− "}
+.kodel div{margin-top:10px;padding:12px 14px;background:#F4F8F9;border-radius:10px;color:#4a5a64}
+.kodel div p{margin:0 0 6px}
+.kodel div p:last-child{margin:0}
+.kodel b{color:#9a3b2f}
+ul.dok{list-style:none;padding:0;margin:0}
+ul.dok li{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+ul.dok input{margin-top:3px;width:19px;height:19px;accent-color:#0E5E6E;flex:0 0 auto}
+.baigiam{background:#fff;border-radius:16px;padding:24px;margin:26px 0 8px}
+.baigiam h3{margin:0 0 6px;color:#0E5E6E;font-size:19px;font-weight:600}
+.baigiam p{margin:0 0 16px;color:#6b7c87;font-size:14.5px}
+.mygt{display:flex;gap:10px;flex-wrap:wrap}
+button{font:inherit;cursor:pointer;border-radius:26px;padding:13px 24px;font-size:15.5px;border:1px solid #dce4e8;background:#fff;color:#0E5E6E}
+button.p{background:#14808F;border-color:#14808F;color:#fff}
+button:active{transform:translateY(1px)}
+.juosta{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #dce4e8;padding:11px 0;z-index:9}
+.juosta .w{display:flex;align-items:center;gap:14px}
+.bar{flex:1;height:7px;background:#e7eef0;border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:#14808F;transition:width .25s}
+.juosta small{color:#6b7c87;font-size:13px;white-space:nowrap}
+.juosta button{padding:9px 18px;font-size:14px}
+footer{padding:28px 0 40px;color:#8C8980;font-size:12.5px;text-align:center}
+@media(max-width:640px){.juosta button{padding:9px 14px}.juosta small{font-size:12px}}
+@media print{.juosta,.mygt{display:none}body{background:#fff;padding:0}}
+</style></head><body>
+<header><div class="w"><svg xmlns="http://www.w3.org/2000/svg" width="420" height="150" viewBox="0 0 420 150" font-family="Helvetica Neue,Helvetica,Arial,sans-serif">
+<path d="M 34 42 Q 44 35 54 42 Q 64 49 74 42 Q 84 35 94 42 Q 104 49 114 42" fill="none" stroke="#0E5E6E" stroke-width="2.6" stroke-linecap="round" opacity="0.35"/>
+<path d="M 34 60 Q 44 50 54 60 Q 64 70 74 60 Q 84 50 94 60 Q 104 70 114 60" fill="none" stroke="#0E5E6E" stroke-width="3.0" stroke-linecap="round" opacity="0.65"/>
+<path d="M 34 78 Q 44 65 54 78 Q 64 91 74 78 Q 84 65 94 78 Q 104 91 114 78" fill="none" stroke="#0E5E6E" stroke-width="3.4" stroke-linecap="round" opacity="1.0"/>
+<text x="32" y="122" font-size="42" font-weight="300" letter-spacing="14" fill="#0E5E6E">ALON</text>
+<text x="36" y="144" font-size="10.5" letter-spacing="5.5" fill="#C9A227">SIARGAO · PHILIPPINES</text>
+</svg>
+<h1>Klausimai apie žemę prieš avansą</h1>
+<p>Lot 9255-A, 7 040 m², General Luna. Užpildyk tiek, kiek žinai, likusius palik tuščius. Atsakymai įrašomi automatiškai, galima uždaryti ir grįžti.</p>
+</div></header>
+<div class="w">
+<div class="kas"><label for="kas">Kas pildo</label>
+<input id="kas" data-k="kas" placeholder="Vardas" autocomplete="name"></div>
+
+<div class="info"><b>Kodėl viso šito reikia.</b> Avansas yra 115 000 €, o sutartis rašoma
+penkiasdešimčiai metų. Abu dalykai negrįžtami. Kiekvienas klausimas kainuoja vieną pokalbį,
+o neužduotas gali kainuoti visą įnašą. Jei kažko nežinai, tai irgi atsakymas: pažymėk
+„Nežinau“ ir žinosim, ką dar reikia išsiaiškinti iki susitikimo.</div>
+
+<section data-blokas="A. Be šitų atsakymų avansas nejuda"><h2>A. Be šitų atsakymų avansas nejuda</h2><p class="kam">Klausiama savininkui arba jo agentui</p><div class="tikslas">Šeši klausimai, kurių atsakymai nusprendžia, ar yra ką svarstyti. Norime įsitikinti, kad nuoma yra pakankamai ilga, leidžia viešbutį, leidžia perleisti teises, remiasi tikru registruotu titulu ir kad pastatai, kuriuos pastatysime už keturis milijonus, po penkiasdešimties metų nedingsta be atlygio. Jei bent į vieną iš jų atsakymas neigiamas, toliau neinam.</div>
+<div class="q" data-nr="A1" data-kl="Koks nuomos terminas ir pagal kurį įstatymą sutartis? RA 7652 (investuotojo) ar Civilinis kodeksas?"><div class="qh"><span class="nr">A1</span><p class="qt">Koks <b>nuomos terminas</b> ir pagal kurį įstatymą sutartis? RA 7652 (investuotojo) ar Civilinis kodeksas?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="A1" value="Nežinau" data-k="A1_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="A1" value="Tikrinu" data-k="A1_r"><span>Tikrinu</span></label>
+</div><textarea data-k="A1_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>RA 7652 duoda 50 metų su pratęsimu 25, paprasta nuoma tik 25+25. Skirtumas dvigubas</p><p><b>Blogas atsakymas:</b> „Dar nežinom” arba 25 metai be pratęsimo</p></div></details></div>
+<div class="q" data-nr="A2" data-kl="Ar sutartis leidžia komercinę veiklą, konkrečiai viešbutį?"><div class="qh"><span class="nr">A2</span><p class="qt">Ar sutartis leidžia <b>komercinę veiklą, konkrečiai viešbutį</b>?</p></div><div class="chips">
+<label class=""><input type="radio" name="A2" value="Taip" data-k="A2_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="A2" value="Ne" data-k="A2_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="A2" value="Nežinau" data-k="A2_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="A2" value="Tikrinu" data-k="A2_r"><span>Tikrinu</span></label>
+</div><textarea data-k="A2_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Kai kurios nuomos leidžia tik gyvenamąją paskirtį. Viešbutis be šito neegzistuoja</p><p><b>Blogas atsakymas:</b> Tyli arba „reikės derinti”</p></div></details></div>
+<div class="q" data-nr="A3" data-kl="Ar leidžiama subnuoma?"><div class="qh"><span class="nr">A3</span><p class="qt">Ar leidžiama <b>subnuoma</b>?</p></div><div class="chips">
+<label class=""><input type="radio" name="A3" value="Taip" data-k="A3_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="A3" value="Ne" data-k="A3_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="A3" value="Nežinau" data-k="A3_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="A3" value="Tikrinu" data-k="A3_r"><span>Tikrinu</span></label>
+</div><textarea data-k="A3_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Be jos negalim nei parduoti, nei perleisti operatoriui</p><p><b>Blogas atsakymas:</b> Draudžiama arba reikia savininko sutikimo kiekvienu atveju</p></div></details></div>
+<div class="q" data-nr="A4" data-kl="Ar nuomotojas turi registruotą titulą (OCT arba TCT)? Ne tax declaration"><div class="qh"><span class="nr">A4</span><p class="qt">Ar nuomotojas turi <b>registruotą titulą</b> (OCT arba TCT)? Ne tax declaration</p></div><div class="chips">
+<label class=""><input type="radio" name="A4" value="Taip" data-k="A4_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="A4" value="Ne" data-k="A4_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="A4" value="Nežinau" data-k="A4_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="A4" value="Tikrinu" data-k="A4_r"><span>Tikrinu</span></label>
+</div><textarea data-k="A4_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Mūsų brėžinyje parašyta „not for registration purposes”, tai tik eskizas</p><p><b>Blogas atsakymas:</b> Turi tik tax declaration arba „titulas tvarkomas”</p></div></details></div>
+<div class="q" data-nr="A5" data-kl="Ar nuoma bus registruota Registry of Deeds?"><div class="qh"><span class="nr">A5</span><p class="qt">Ar nuoma bus <b>registruota Registry of Deeds</b>?</p></div><div class="chips">
+<label class=""><input type="radio" name="A5" value="Taip" data-k="A5_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="A5" value="Ne" data-k="A5_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="A5" value="Nežinau" data-k="A5_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="A5" value="Tikrinu" data-k="A5_r"><span>Tikrinu</span></label>
+</div><textarea data-k="A5_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Neregistruota nuoma negalioja trečiosioms šalims. Savininkas parduos žemę ir naujas savininkas mūsų nepripažins</p><p><b>Blogas atsakymas:</b> Ne arba „tai brangu”</p></div></details></div>
+<div class="q" data-nr="A6" data-kl="Kas nutinka pastatams pasibaigus nuomai?"><div class="qh"><span class="nr">A6</span><p class="qt"><b>Kas nutinka pastatams</b> pasibaigus nuomai?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="A6" value="Nežinau" data-k="A6_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="A6" value="Tikrinu" data-k="A6_r"><span>Tikrinu</span></label>
+</div><textarea data-k="A6_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Pagal CK 1678 str. statiniai atitenka savininkui, kuris gali atlyginti pusę vertės. 2 mln € dovana</p><p><b>Blogas atsakymas:</b> Sutartyje nieko nėra</p></div></details></div>
+</section>
+<section data-blokas="B. Pinigai"><h2>B. Pinigai</h2><p class="kam">Klausiama savininkui arba jo agentui</p><div class="tikslas">Nuomos kaina yra didžiausias vienas svertas projekte, bet dar svarbesnė už ją yra indeksavimo sąlyga. Skirtumas tarp fiksuotos nuomos ir kylančios 5 % kasmet per penkiasdešimt metų yra didesnis nei visa statybos kaina. Norime lubų, atleidimo statybos laikotarpiui ir aiškumo, kas yra tas 115 000 € avansas.</div>
+<div class="q" data-nr="B1" data-kl="Kokia indeksavimo sąlyga? Koks procentas ir kas kiek metų?"><div class="qh"><span class="nr">B1</span><p class="qt">Kokia <b>indeksavimo sąlyga</b>? Koks procentas ir kas kiek metų?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="B1" value="Nežinau" data-k="B1_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="B1" value="Tikrinu" data-k="B1_r"><span>Tikrinu</span></label>
+</div><textarea data-k="B1_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Skirtumas tarp fiksuotos ir +5 % kas metus per 50 metų yra <b>18,4 mln €</b>. Svarbiau už visą likusią studiją</p><p><b>Blogas atsakymas:</b> Neaptarta arba „pagal infliaciją” be lubų</p></div></details></div>
+<div class="q" data-nr="B2" data-kl="Ar galim gauti indeksavimo lubas (pvz. ne daugiau 3 % kas 3 metus)?"><div class="qh"><span class="nr">B2</span><p class="qt">Ar galim gauti <b>indeksavimo lubas</b> (pvz. ne daugiau 3 % kas 3 metus)?</p></div><div class="chips">
+<label class=""><input type="radio" name="B2" value="Taip" data-k="B2_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="B2" value="Ne" data-k="B2_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="B2" value="Nežinau" data-k="B2_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="B2" value="Tikrinu" data-k="B2_r"><span>Tikrinu</span></label>
+</div><textarea data-k="B2_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Vienintelis būdas suvaldyti B1</p><p><b>Blogas atsakymas:</b> Savininkas atsisako bet kokių lubų</p></div></details></div>
+<div class="q" data-nr="B3" data-kl="Ar duodamas atleidimas nuo nuomos statybos laikotarpiui, 12 iki 18 mėn.?"><div class="qh"><span class="nr">B3</span><p class="qt">Ar duodamas <b>atleidimas nuo nuomos statybos laikotarpiui</b>, 12 iki 18 mėn.?</p></div><div class="chips">
+<label class=""><input type="radio" name="B3" value="Taip" data-k="B3_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="B3" value="Ne" data-k="B3_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="B3" value="Nežinau" data-k="B3_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="B3" value="Tikrinu" data-k="B3_r"><span>Tikrinu</span></label>
+</div><textarea data-k="B3_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Rinkoje tai standartas. Vertė mums iki <b>173 556 €</b></p><p><b>Blogas atsakymas:</b> Ne</p></div></details></div>
+<div class="q" data-nr="B4" data-kl="Ar avansas 115 000 € yra užskaitomas į nuomą, ar tai depozitas?"><div class="qh"><span class="nr">B4</span><p class="qt">Ar avansas 115 000 € yra <b>užskaitomas</b> į nuomą, ar tai depozitas?</p></div><div class="chips">
+<label class=""><input type="radio" name="B4" value="Taip" data-k="B4_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="B4" value="Ne" data-k="B4_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="B4" value="Nežinau" data-k="B4_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="B4" value="Tikrinu" data-k="B4_r"><span>Tikrinu</span></label>
+</div><textarea data-k="B4_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Jei depozitas, jis įšaldytas 50 metų</p><p><b>Blogas atsakymas:</b> Depozitas be palūkanų ir be grąžinimo</p></div></details></div>
+<div class="q" data-nr="B5" data-kl="Ar galima etapinė nuoma: pirmus 2 metus pusė sklypo, tada visas?"><div class="qh"><span class="nr">B5</span><p class="qt">Ar galima <b>etapinė nuoma</b>: pirmus 2 metus pusė sklypo, tada visas?</p></div><div class="chips">
+<label class=""><input type="radio" name="B5" value="Taip" data-k="B5_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="B5" value="Ne" data-k="B5_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="B5" value="Nežinau" data-k="B5_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="B5" value="Tikrinu" data-k="B5_r"><span>Tikrinu</span></label>
+</div><textarea data-k="B5_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Pirmam etapui reikia pusės sklypo. Vertė apie <b>170 000 €</b></p><p><b>Blogas atsakymas:</b> Ne</p></div></details></div>
+<div class="q" data-nr="B6" data-kl="Kokia būtų pirkimo kaina, jei savininkas kada nors parduotų? Ar galim gauti pirmenybės teisę?"><div class="qh"><span class="nr">B6</span><p class="qt">Kokia būtų <b>pirkimo kaina</b>, jei savininkas kada nors parduotų? Ar galim gauti pirmenybės teisę?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="B6" value="Nežinau" data-k="B6_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="B6" value="Tikrinu" data-k="B6_r"><span>Tikrinu</span></label>
+</div><textarea data-k="B6_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>General Luna žemė be pajūrio yra ₱8–15 tūkst./m². Nuoma per 11 metų prilygsta visai sklypo kainai</p><p><b>Blogas atsakymas:</b> Neparduoda niekada ir pirmenybės neduoda</p></div></details></div>
+</section>
+<section data-blokas="C. Statyba ir leidimai"><h2>C. Statyba ir leidimai</h2><p class="kam">Klausiama savivaldybei ir advokatui</p><div class="tikslas">Siargao yra saugoma teritorija. Norime raštiško patvirtinimo, kad leidimai išduodami, kad galimi du aukštai, kad mūsų užstatymo tankis telpa į normą ir kad žinome, kiek užtruks aplinkosauginis sertifikatas. Tai klausimai savivaldybei, ne savininkui.</div>
+<div class="q" data-nr="C1" data-kl="Ar General Luna šiuo metu išduoda statybos leidimus? Ar nėra moratoriumo?"><div class="qh"><span class="nr">C1</span><p class="qt">Ar <b>General Luna šiuo metu išduoda statybos leidimus</b>? Ar nėra moratoriumo?</p></div><div class="chips">
+<label class=""><input type="radio" name="C1" value="Taip" data-k="C1_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="C1" value="Ne" data-k="C1_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="C1" value="Nežinau" data-k="C1_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="C1" value="Tikrinu" data-k="C1_r"><span>Tikrinu</span></label>
+</div><textarea data-k="C1_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Siargao yra saugoma teritorija, moratoriumų istorija yra</p><p><b>Blogas atsakymas:</b> Yra moratoriumas arba „kartais”</p></div></details></div>
+<div class="q" data-nr="C2" data-kl="Koks aukštingumo apribojimas? Ar galim du aukštus?"><div class="qh"><span class="nr">C2</span><p class="qt">Koks <b>aukštingumo apribojimas</b>? Ar galim du aukštus?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="C2" value="Nežinau" data-k="C2_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="C2" value="Tikrinu" data-k="C2_r"><span>Tikrinu</span></label>
+</div><textarea data-k="C2_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Visas C variantas yra dviejų aukštų blokai</p><p><b>Blogas atsakymas:</b> Tik vienas aukštas</p></div></details></div>
+<div class="q" data-nr="C3" data-kl="Koks užstatymo tankio apribojimas?"><div class="qh"><span class="nr">C3</span><p class="qt">Koks <b>užstatymo tankio</b> apribojimas?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="C3" value="Nežinau" data-k="C3_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="C3" value="Tikrinu" data-k="C3_r"><span>Tikrinu</span></label>
+</div><textarea data-k="C3_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Mūsų C variantas užima 11 % sklypo, tai turėtų tilpti, bet reikia patvirtinimo</p><p><b>Blogas atsakymas:</b> Griežtesnis nei 15 %</p></div></details></div>
+<div class="q" data-nr="C4" data-kl="Ar sklypas patenka į SIPLAS saugomą zoną ir ką tai riboja?"><div class="qh"><span class="nr">C4</span><p class="qt">Ar sklypas patenka į <b>SIPLAS</b> saugomą zoną ir ką tai riboja?</p></div><div class="chips">
+<label class=""><input type="radio" name="C4" value="Taip" data-k="C4_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="C4" value="Ne" data-k="C4_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="C4" value="Nežinau" data-k="C4_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="C4" value="Tikrinu" data-k="C4_r"><span>Tikrinu</span></label>
+</div><textarea data-k="C4_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Nuo to priklauso leidimų kelias ir trukmė</p><p><b>Blogas atsakymas:</b> Patenka į griežtą zoną</p></div></details></div>
+<div class="q" data-nr="C5" data-kl="Ar reikia ECC (Environmental Compliance Certificate) ir kiek tai užtrunka?"><div class="qh"><span class="nr">C5</span><p class="qt">Ar reikia <b>ECC</b> (Environmental Compliance Certificate) ir kiek tai užtrunka?</p></div><div class="chips">
+<label class=""><input type="radio" name="C5" value="Taip" data-k="C5_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="C5" value="Ne" data-k="C5_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="C5" value="Nežinau" data-k="C5_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="C5" value="Tikrinu" data-k="C5_r"><span>Tikrinu</span></label>
+</div><textarea data-k="C5_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>30 kambarių viešbučiui greičiausiai taip</p><p><b>Blogas atsakymas:</b> Metai ar daugiau</p></div></details></div>
+<div class="q" data-nr="C6" data-kl="Ar yra kokosų kirtimo apribojimai ir kiek palmių sklype?"><div class="qh"><span class="nr">C6</span><p class="qt">Ar yra <b>kokosų kirtimo</b> apribojimai ir kiek palmių sklype?</p></div><div class="chips">
+<label class=""><input type="radio" name="C6" value="Taip" data-k="C6_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="C6" value="Ne" data-k="C6_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="C6" value="Nežinau" data-k="C6_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="C6" value="Tikrinu" data-k="C6_r"><span>Tikrinu</span></label>
+</div><textarea data-k="C6_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Filipinuose kokoso palmės saugomos, kirsti reikia leidimo ir persodinimo</p><p><b>Blogas atsakymas:</b> Daug palmių statybos zonoje</p></div></details></div>
+</section>
+<section data-blokas="D. Sklypas fiziškai"><h2>D. Sklypas fiziškai</h2><p class="kam">Klausiama advokatui, matininkui ir savivaldybei</p><div class="tikslas">Gražus plotas dar nėra tinkamas plotas. Norime žinoti, kaip į jį įvažiuoja autobusiukas, ką daro svetimas 246 m² sklypas mūsų viduryje, ar per teritoriją neina vietinių takų, iš kur ims vandenį trisdešimt kambarių ir ar sklypas nėra potvynio zonoje.</div>
+<div class="q" data-nr="D1" data-kl="Kas yra privažiavimo kelias? Kieno nuosavybė, koks plotis, ar yra servitutas raštu?"><div class="qh"><span class="nr">D1</span><p class="qt"><b>Kas yra privažiavimo kelias?</b> Kieno nuosavybė, koks plotis, ar yra servitutas raštu?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="D1" value="Nežinau" data-k="D1_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="D1" value="Tikrinu" data-k="D1_r"><span>Tikrinu</span></label>
+</div><textarea data-k="D1_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Nuotraukoje matosi tik siauras takas tarp namų. Viešbučiui reikia realaus privažiavimo</p><p><b>Blogas atsakymas:</b> Kelias svetimas ir be servituto</p></div></details></div>
+<div class="q" data-nr="D2" data-kl="Ką daro Lot 9255-B (246 m², Dwight Camingue)? Kur jo įvažiavimas?"><div class="qh"><span class="nr">D2</span><p class="qt"><b>Ką daro Lot 9255-B</b> (246 m², Dwight Camingue)? Kur jo įvažiavimas?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="D2" value="Nežinau" data-k="D2_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="D2" value="Tikrinu" data-k="D2_r"><span>Tikrinu</span></label>
+</div><textarea data-k="D2_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Tai anklavas mūsų teritorijos viduryje. Uždaram kurortui tai problema</p><p><b>Blogas atsakymas:</b> Jo įvažiavimas eina per mūsų vidurį</p></div></details></div>
+<div class="q" data-nr="D3" data-kl="Ar galima nupirkti arba išsinuomoti tą 246 m²?"><div class="qh"><span class="nr">D3</span><p class="qt">Ar galima <b>nupirkti arba išsinuomoti tą 246 m²</b>?</p></div><div class="chips">
+<label class=""><input type="radio" name="D3" value="Taip" data-k="D3_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="D3" value="Ne" data-k="D3_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="D3" value="Nežinau" data-k="D3_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="D3" value="Tikrinu" data-k="D3_r"><span>Tikrinu</span></label>
+</div><textarea data-k="D3_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Sutvarkytų D2 visam laikui</p><p><b>Blogas atsakymas:</b> Savininkas neparduoda</p></div></details></div>
+<div class="q" data-nr="D4" data-kl="Ar per sklypą eina nusistovėję vietinių takai ir ar jie sukuria teisę?"><div class="qh"><span class="nr">D4</span><p class="qt">Ar per sklypą eina <b>nusistovėję vietinių takai</b> ir ar jie sukuria teisę?</p></div><div class="chips">
+<label class=""><input type="radio" name="D4" value="Taip" data-k="D4_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="D4" value="Ne" data-k="D4_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="D4" value="Nežinau" data-k="D4_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="D4" value="Tikrinu" data-k="D4_r"><span>Tikrinu</span></label>
+</div><textarea data-k="D4_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Nuotraukoje takai matosi. Filipinuose ilgalaikis naudojimas gali virsti servitutu</p><p><b>Blogas atsakymas:</b> Taip, ir jie įteisinti</p></div></details></div>
+<div class="q" data-nr="D5" data-kl="Vanduo: ar galima gręžti gręžinį, ar reikia leidimo (NWRB)?"><div class="qh"><span class="nr">D5</span><p class="qt"><b>Vanduo:</b> ar galima gręžti gręžinį, ar reikia leidimo (NWRB)?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="D5" value="Nežinau" data-k="D5_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="D5" value="Tikrinu" data-k="D5_r"><span>Tikrinu</span></label>
+</div><textarea data-k="D5_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>30 kambarių viešbučiui vandens reikia daug</p><p><b>Blogas atsakymas:</b> Gręžti negalima</p></div></details></div>
+<div class="q" data-nr="D6" data-kl="Elektra: kokia galia prieinama ir per kiek laiko?"><div class="qh"><span class="nr">D6</span><p class="qt"><b>Elektra:</b> kokia galia prieinama ir per kiek laiko?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="D6" value="Nežinau" data-k="D6_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="D6" value="Tikrinu" data-k="D6_r"><span>Tikrinu</span></label>
+</div><textarea data-k="D6_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Viešbutis su HYROX zona ir baseinu reikalauja rimtos galios</p><p><b>Blogas atsakymas:</b> Galia maža arba prijungimas ilgas</p></div></details></div>
+<div class="q" data-nr="D7" data-kl="Nuotekos: ar privaloma sava valymo įranga (STP)?"><div class="qh"><span class="nr">D7</span><p class="qt"><b>Nuotekos:</b> ar privaloma sava valymo įranga (STP)?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="D7" value="Nežinau" data-k="D7_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="D7" value="Tikrinu" data-k="D7_r"><span>Tikrinu</span></label>
+</div><textarea data-k="D7_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Tai reikšminga CAPEX eilutė, kurios dar neįskaičiavom</p><p><b>Blogas atsakymas:</b> Privaloma didelė sistema</p></div></details></div>
+<div class="q" data-nr="D8" data-kl="Ar sklypas potvynio zonoje? Kokia altitudė?"><div class="qh"><span class="nr">D8</span><p class="qt">Ar sklypas <b>potvynio zonoje</b>? Kokia altitudė?</p></div><div class="chips">
+<label class=""><input type="radio" name="D8" value="Taip" data-k="D8_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="D8" value="Ne" data-k="D8_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="D8" value="Nežinau" data-k="D8_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="D8" value="Tikrinu" data-k="D8_r"><span>Tikrinu</span></label>
+</div><textarea data-k="D8_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Siargao ir taifūnai. Draudimas ir pamatai priklauso nuo to</p><p><b>Blogas atsakymas:</b> Potvynio zona</p></div></details></div>
+</section>
+<section data-blokas="E. Struktūra ir partneris"><h2>E. Struktūra ir partneris</h2><p class="kam">Klausiama tarp Gyčio ir Arnoldo</p><div class="tikslas">Vienintelis blokas, kuris nekeliauja niekam už mūsų rato. Arnoldas įdeda pusę kapitalo į struktūrą, kurios pagal Filipinų įstatymus negali kontroliuoti. Norime žinoti, kieno vardu sutartis, kas tas vietos partneris, kokios garantijos ir kas nutinka, jei susipykstam.</div>
+<div class="q" data-nr="E1" data-kl="Kieno vardu bus nuomos sutartis?"><div class="qh"><span class="nr">E1</span><p class="qt"><b>Kieno vardu bus nuomos sutartis?</b></p></div><div class="chips">
+<label class="nz"><input type="radio" name="E1" value="Nežinau" data-k="E1_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="E1" value="Tikrinu" data-k="E1_r"><span>Tikrinu</span></label>
+</div><textarea data-k="E1_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Arnoldas įdeda pusę pinigų, bet sutartis bus ne jo vardu</p><p><b>Blogas atsakymas:</b> „Sugalvosim vėliau”</p></div></details></div>
+<div class="q" data-nr="E2" data-kl="Kas tas filipinietis partneris, kiek jį pažįstam ir kokia jo dalis?"><div class="qh"><span class="nr">E2</span><p class="qt">Kas tas <b>filipinietis partneris</b>, kiek jį pažįstam ir kokia jo dalis?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="E2" value="Nežinau" data-k="E2_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="E2" value="Tikrinu" data-k="E2_r"><span>Tikrinu</span></label>
+</div><textarea data-k="E2_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Be tikros partnerystės tai Anti-Dummy įstatymo rizika, o ji baudžiamoji</p><p><b>Blogas atsakymas:</b> Formalus žmogus, „tik vardas”</p></div></details></div>
+<div class="q" data-nr="E3" data-kl="Kokia teisinė forma: 60/40 bendrovė ar fizinio asmens nuoma?"><div class="qh"><span class="nr">E3</span><p class="qt">Kokia <b>teisinė forma</b>: 60/40 bendrovė ar fizinio asmens nuoma?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="E3" value="Nežinau" data-k="E3_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="E3" value="Tikrinu" data-k="E3_r"><span>Tikrinu</span></label>
+</div><textarea data-k="E3_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Nuo to priklauso valdymas ir apsauga</p><p><b>Blogas atsakymas:</b> Neapibrėžta</p></div></details></div>
+<div class="q" data-nr="E4" data-kl="Kokias garantijas gauna Arnoldas kaip 50 % finansuotojas? Įkeitimas, laidavimas, step-in teisė?"><div class="qh"><span class="nr">E4</span><p class="qt">Kokias <b>garantijas gauna Arnoldas</b> kaip 50 % finansuotojas? Įkeitimas, laidavimas, step-in teisė?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="E4" value="Nežinau" data-k="E4_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="E4" value="Tikrinu" data-k="E4_r"><span>Tikrinu</span></label>
+</div><textarea data-k="E4_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Pinigai eina į struktūrą, kurios jis nekontroliuoja</p><p><b>Blogas atsakymas:</b> Jokių, „pasitikim”</p></div></details></div>
+<div class="q" data-nr="E5" data-kl="Ar avansas gali būti dalimis pagal sąlygas: registruota nuoma → pinigai, leidimas → kiti pinigai?"><div class="qh"><span class="nr">E5</span><p class="qt">Ar avansas gali būti <b>dalimis pagal sąlygas</b>: registruota nuoma → pinigai, leidimas → kiti pinigai?</p></div><div class="chips">
+<label class=""><input type="radio" name="E5" value="Taip" data-k="E5_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="E5" value="Ne" data-k="E5_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="E5" value="Nežinau" data-k="E5_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="E5" value="Tikrinu" data-k="E5_r"><span>Tikrinu</span></label>
+</div><textarea data-k="E5_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Pirmi pinigai yra labiausiai neapsaugoti</p><p><b>Blogas atsakymas:</b> Viskas iš karto</p></div></details></div>
+<div class="q" data-nr="E6" data-kl="Kas nutinka, jei partneris pasitraukia, miršta arba susipykstam?"><div class="qh"><span class="nr">E6</span><p class="qt">Kas nutinka, jei <b>partneris pasitraukia, miršta arba susipykstam</b>?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="E6" value="Nežinau" data-k="E6_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="E6" value="Tikrinu" data-k="E6_r"><span>Tikrinu</span></label>
+</div><textarea data-k="E6_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Klausimas, kurio niekas nenori užduoti, bet jis pigiausias dabar</p><p><b>Blogas atsakymas:</b> Neaptarta</p></div></details></div>
+</section>
+<section data-blokas="F. Viešbučio veiklai (C variantui)"><h2>F. Viešbučio veiklai (C variantui)</h2><p class="kam">Klausiama advokatui ir savivaldybei</p><div class="tikslas">Pastatyti ir atidaryti yra du skirtingi dalykai. Norime iš anksto žinoti leidimų kelią, ar užsienietis gali vadovauti, kokie mokesčiai, ar bus galima alkoholio licencija barui ir ar nėra apribojimų darbo jėgai.</div>
+<div class="q" data-nr="F1" data-kl="Ar reikia Mayor's permit ir DOT akreditacijos, ir kiek užtrunka?"><div class="qh"><span class="nr">F1</span><p class="qt">Ar reikia <b>Mayor's permit ir DOT akreditacijos</b>, ir kiek užtrunka?</p></div><div class="chips">
+<label class=""><input type="radio" name="F1" value="Taip" data-k="F1_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="F1" value="Ne" data-k="F1_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="F1" value="Nežinau" data-k="F1_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="F1" value="Tikrinu" data-k="F1_r"><span>Tikrinu</span></label>
+</div><textarea data-k="F1_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Be jų negalim priimti svečių</p></div></details></div>
+<div class="q" data-nr="F2" data-kl="Ar užsienietis gali valdyti viešbutį, ar reikia vietinio operatoriaus?"><div class="qh"><span class="nr">F2</span><p class="qt">Ar <b>užsienietis gali valdyti</b> viešbutį, ar reikia vietinio operatoriaus?</p></div><div class="chips">
+<label class=""><input type="radio" name="F2" value="Taip" data-k="F2_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="F2" value="Ne" data-k="F2_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="F2" value="Nežinau" data-k="F2_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="F2" value="Tikrinu" data-k="F2_r"><span>Tikrinu</span></label>
+</div><textarea data-k="F2_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Nuo to priklauso, kas realiai vadovauja</p></div></details></div>
+<div class="q" data-nr="F3" data-kl="Kokie mokesčiai viešbučio veiklai: pelno, PVM, vietiniai?"><div class="qh"><span class="nr">F3</span><p class="qt">Kokie <b>mokesčiai</b> viešbučio veiklai: pelno, PVM, vietiniai?</p></div><div class="chips">
+<label class="nz"><input type="radio" name="F3" value="Nežinau" data-k="F3_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="F3" value="Tikrinu" data-k="F3_r"><span>Tikrinu</span></label>
+</div><textarea data-k="F3_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Modelyje skaičiuojam 25 % pelno mokestį, reikia patvirtinti</p></div></details></div>
+<div class="q" data-nr="F4" data-kl="Ar galima alkoholio licencija barui prie recovery zonos?"><div class="qh"><span class="nr">F4</span><p class="qt">Ar galima <b>alkoholio licencija</b> barui prie recovery zonos?</p></div><div class="chips">
+<label class=""><input type="radio" name="F4" value="Taip" data-k="F4_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="F4" value="Ne" data-k="F4_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="F4" value="Nežinau" data-k="F4_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="F4" value="Tikrinu" data-k="F4_r"><span>Tikrinu</span></label>
+</div><textarea data-k="F4_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Baras yra koncepcijos dalis</p></div></details></div>
+<div class="q" data-nr="F5" data-kl="Ar yra darbo jėgos apribojimų užsieniečiams?"><div class="qh"><span class="nr">F5</span><p class="qt">Ar yra <b>darbo jėgos</b> apribojimų užsieniečiams?</p></div><div class="chips">
+<label class=""><input type="radio" name="F5" value="Taip" data-k="F5_r"><span>Taip</span></label>
+<label class="ne"><input type="radio" name="F5" value="Ne" data-k="F5_r"><span>Ne</span></label>
+<label class="nz"><input type="radio" name="F5" value="Nežinau" data-k="F5_r"><span>Nežinau</span></label>
+<label class="nz"><input type="radio" name="F5" value="Tikrinu" data-k="F5_r"><span>Tikrinu</span></label>
+</div><textarea data-k="F5_t" placeholder="Paaiškinimas, skaičius, sąlyga, data…" rows="1"></textarea>
+<details class="kodel"><summary>Kodėl klausiam</summary><div><p>Per ESIT turim Filipinų kanalą, verta suderinti</p></div></details></div>
+</section>
+<h2>G. Dokumentai</h2><p class="kam">Ką jau turime raštu</p><div class="tikslas">Šeši popieriai, kurie paverčia pokalbius patikrinamais faktais. Pažymėk tuos, kurie jau yra tavo rankose.</div><ul class="dok">
+<li><input type="checkbox" id="d1" data-k="dok1" data-tekstas="Nuomos sutarties projektas, pilnas, ne santrauka"><label for="d1">Nuomos sutarties projektas, pilnas, ne santrauka</label></li>
+<li><input type="checkbox" id="d2" data-k="dok2" data-tekstas="Titulo kopija (OCT arba TCT) ir naujausias Registry of Deeds išrašas"><label for="d2">Titulo kopija (OCT arba TCT) ir naujausias Registry of Deeds išrašas</label></li>
+<li><input type="checkbox" id="d3" data-k="dok3" data-tekstas="Nepriklausomo Filipinų advokato išvada"><label for="d3">Nepriklausomo Filipinų advokato išvada</label></li>
+<li><input type="checkbox" id="d4" data-k="dok4" data-tekstas="Savivaldybės raštas dėl leidimų režimo ir aukštingumo"><label for="d4">Savivaldybės raštas dėl leidimų režimo ir aukštingumo</label></li>
+<li><input type="checkbox" id="d5" data-k="dok5" data-tekstas="Privažiavimo servituto dokumentas"><label for="d5">Privažiavimo servituto dokumentas</label></li>
+<li><input type="checkbox" id="d6" data-k="dok6" data-tekstas="Struktūros aprašas: kas ką valdo, pasirašo ir garantuoja"><label for="d6">Struktūros aprašas: kas ką valdo, pasirašo ir garantuoja</label></li>
+</ul>
+<div class="baigiam"><h3>Kai baigsi</h3>
+<p>Paprasčiausia: paspausk „Atsisiųsti“ ir atsiųsk failą Arnoldui per WhatsApp arba paštu.
+Jei patogiau, nukopijuok tekstą ir įklijuok į žinutę. Nieko nespaudus, atsakymai lieka tik
+šitoje naršyklėje ir niekur neišsiunčiami.</p>
+<div class="mygt">
+<button class="p" onclick="atsisiusk()">Atsisiųsti atsakymus</button>
+<button onclick="kopijuok(this)">Kopijuoti tekstą</button>
+<button onclick="laiskas()">Atidaryti laišką</button>
+<button onclick="isvalyk()" style="color:#9a3b2f">Išvalyti</button>
+</div></div>
+<footer>ALON Sport &amp; Wellness Hotel · Lot 9255-A, General Luna, Siargao<br>
+Anketa veikia be interneto ryšio ir be prisijungimo. Duomenys lieka tavo įrenginyje.</footer>
+</div>
+<div class="juosta"><div class="w">
+<div class="bar"><i></i></div>
+<small><span id="skaic">0</span> atsakyta</small>
+<small id="busena" style="color:#14808F;min-width:64px"></small>
+<button class="p" onclick="atsisiusk()">Atsisiųsti</button>
+</div></div>
+<script>
+const RAKTAS="alon-anketa-v1";
+const laukai=()=>[...document.querySelectorAll("[data-k]")];
+let bus=null;
+function irasyk(){
+  const d={};
+  laukai().forEach(e=>{
+    if(e.type==="radio"){ if(e.checked) d[e.dataset.k]=e.value; }
+    else if(e.type==="checkbox"){ d[e.dataset.k]=e.checked; }
+    else d[e.dataset.k]=e.value;
+  });
+  try{ localStorage.setItem(RAKTAS, JSON.stringify(d)); }catch(_){}
+  zymek(); pazanga();
+  const s=document.getElementById("busena");
+  s.textContent="Išsaugota"; clearTimeout(bus);
+  bus=setTimeout(()=>{s.textContent="";},1600);
+}
+function atkurk(){
+  let d={}; try{ d=JSON.parse(localStorage.getItem(RAKTAS)||"{}"); }catch(_){}
+  laukai().forEach(e=>{
+    const v=d[e.dataset.k]; if(v===undefined) return;
+    if(e.type==="radio") e.checked=(e.value===v);
+    else if(e.type==="checkbox") e.checked=!!v;
+    else e.value=v;
+  });
+  zymek(); pazanga();
+}
+function zymek(){
+  document.querySelectorAll(".q").forEach(q=>{
+    const r=q.querySelector('input[type=radio]:checked');
+    const t=q.querySelector("textarea");
+    q.classList.toggle("ok", !!r || (t && t.value.trim().length>0));
+  });
+}
+function pazanga(){
+  const v=document.querySelectorAll(".q").length;
+  const u=document.querySelectorAll(".q.ok").length;
+  document.querySelector(".bar i").style.width=(u/v*100)+"%";
+  document.getElementById("skaic").textContent=u+" iš "+v;
+}
+function tekstas(){
+  const kas=document.getElementById("kas").value.trim()||"(nenurodyta)";
+  const data=new Date().toISOString().slice(0,10);
+  let t="ALON Siargao, Lot 9255-A: atsakymai apie žemę\n";
+  t+="Pildė: "+kas+"\nData: "+data+"\n";
+  t+="".padEnd(64,"=")+"\n";
+  let tuscių=[];
+  document.querySelectorAll("section[data-blokas]").forEach(s=>{
+    // tusciu bloku antrasciu nespausdinam, jie tik trukdytu skaityti;
+    // neatsakyti numeriai vis tiek surasomi pabaigoje
+    let b="";
+    s.querySelectorAll(".q").forEach(q=>{
+      const nr=q.dataset.nr, kl=q.dataset.kl;
+      const r=q.querySelector('input[type=radio]:checked');
+      const t2=q.querySelector("textarea").value.trim();
+      if(!r && !t2){ tuscių.push(nr); return; }
+      b+="\n"+nr+". "+kl+"\n";
+      if(r) b+="   → "+r.value+"\n";
+      if(t2) b+="   "+t2.replace(/\n/g,"\n   ")+"\n";
+    });
+    if(b) t+="\n"+s.dataset.blokas.toUpperCase()+"\n"+"".padEnd(64,"-")+"\n"+b;
+  });
+  const dok=[...document.querySelectorAll("ul.dok input")].filter(e=>e.checked)
+    .map(e=>e.dataset.tekstas);
+  t+="\nG. DOKUMENTAI, KURIUOS TURIME\n"+"".padEnd(64,"-")+"\n";
+  t+= dok.length ? dok.map(x=>"   ✓ "+x).join("\n")+"\n" : "   (nė vieno dar nėra)\n";
+  if(tuscių.length) t+="\nNEATSAKYTA: "+tuscių.join(", ")+"\n";
+  return t;
+}
+function atsisiusk(){
+  const b=new Blob([tekstas()],{type:"text/plain;charset=utf-8"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(b);
+  a.download="ALON-zeme-atsakymai-"+new Date().toISOString().slice(0,10)+".txt";
+  a.click(); URL.revokeObjectURL(a.href);
+}
+async function kopijuok(btn){
+  try{ await navigator.clipboard.writeText(tekstas()); btn.textContent="Nukopijuota ✓"; }
+  catch(_){ btn.textContent="Nepavyko, naudok atsisiuntimą"; }
+  setTimeout(()=>{btn.textContent="Kopijuoti tekstą";},2400);
+}
+function laiskas(){
+  const t=tekstas();
+  const url="mailto:arnoldas@pronex.lt?subject="+encodeURIComponent("ALON Siargao: atsakymai apie žemę")
+    +"&body="+encodeURIComponent(t.length>1400 ? t.slice(0,1400)+"\n\n[...] Pilnas tekstas atsiųstas atskiru failu." : t);
+  location.href=url;
+}
+function isvalyk(){
+  if(!confirm("Ištrinti visus įrašytus atsakymus iš šios naršyklės?")) return;
+  try{ localStorage.removeItem(RAKTAS); }catch(_){}
+  location.reload();
+}
+document.addEventListener("input", e=>{ if(e.target.dataset.k) irasyk(); });
+document.addEventListener("change", e=>{ if(e.target.dataset.k) irasyk(); });
+atkurk();
+</script></body></html>
